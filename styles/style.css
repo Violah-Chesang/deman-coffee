@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    overflow: hidden;
+}
+
+.container img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.back-video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+        position: absolute;
+    }
+}
