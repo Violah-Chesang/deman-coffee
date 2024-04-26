@@ -3,25 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deman Coffee is organic coffee produced in kenya" />
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/style.css" />
     <title>Deman Coffee</title>
   </head>
   <body>
     <div class="container">
-      <video autoplay loop muted plays-inline class="back-video">
-        <source src="/images/deman-cover.mp4" type="video/mp4">
-    </video>
       <!-- nav -->
       <div class="nav">
+        <!-- logo -->
+        <div class="logo">
+          <img src="/images/logo.png" alt="logo" />
+          <h1 class="deman-name">DEMAN COFFEE</h1>
+        </div>
+
+        <!-- navbar -->
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#beans">Production</a></li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#home">Contact</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <!-- flag -->
+        <div class="flag">
+          <img src="/images/flag.jpeg" alt="Kenyan flag" />
+        </div>
       </div>
+
+      <!-- home -->
+      <div class="home" id="home">
+        <video autoplay loop muted plays-inline class="back-video" id="home">
+          <source src="/images/deman-cover.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- About Us -->
+      <div class="about" id="about">
+        <h1>About Deman Coffee</h1>
+        <div class="about-row">
+          <div class="about-col">  
+            <h1>DEMAN</h1> 
+            <p>Regenerative Agriculture</p>  
+          </div>
+          <div class="about-col">
+            <h2>Deman Estate</h2>
+            <div class="deman-desc">
+              <p>Deman Estate is Situated on the eastern slopes of Mount Kenya, Nkubu town, Meru county-Kenya. It is one of the most fertile and best-watered parts of Kenya. It takes 3-6 hours to drive from Nairobi to Deman Estate.</p>
+              <p>Deman Estate is, in fact, not just one single farm, but spans two farms near each other. The farms mainly cultivate two coffee varieties: <b>Ruiru 11</b> and <b>Batian</b>.</p>
+            </div>
+
+            <h2>Meet the owner</h2>
+            <div class="deman-owner">
+              <div class="owner-desc">
+                <img src="/images/mutai.jpg" alt="Mutai Kinyua" />
+                <h2 class="owner-name">Mr. Mutai Kinyua</h2>
+              </div>
+              <div class="deman-owner-desc">
+                <p>
+                  Mr. Mutai Kinyua is an energetic and charismatic coffee producer. He lives in Nairobi with his family but spends a lot of his time on the farm in Meru, as well. Since the drive takes between 3 and 6 hours, depending on traffic, he usually stays for a couple of days at a time.
+                </p>
+                <p>
+                  Mutai has been farming with regenerative agriculture principles (agroforestry) for 20 years since taking on the farm, and first undertook a transition from traditional agriculture processes.                   
+                </p>
+              </div>
+            </div>                        
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee page -->
+      <div class="coffee" id="coffee">
+        <div class="coffee-cover">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a3416" fill-opacity="1" d="M0,160L60,165.3C120,171,240,181,360,208C480,235,600,277,720,256C840,235,960,149,1080,117.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+          <h2>Caltivation and Proccessing</h2>
+        </div>
+        <div class="coffee-rows">
+          <!-- col 1 -->
+          <div class="coffee-col">
+            <div class="coffee-col-img">
+              <img src="/images/deman-cover.jpg" alt="Deman team">
+            </div>
+            <div class="coffee-col-desc">
+              <h3>Deman Farm</h3>
+              <p>
+                The variety of coffee at Deman Coffee Estate are cultivars Ruiru 11 and Batian. 
+              </p>
+              <p>                
+                We farm with regenerative agriculture agroforestry and the soil at our farm is a mixture of sand and soil rich in nutrients. We use as few chemicals as possible in our farming. The fertilizer we use is organic and consists, to a large extent, of the coffee pulp and parchment, which is combined with an organic fertilizer.
+                We refrain from using pesticides and fungicides and instead use natural techniques.
+                </p>
+            </div>
+          </div>
+
+          <!-- col2 -->
+          <div class="coffee-col">
+            <div class="coffee-col-img">
+              <img src="/images/pick-coffee.png" alt="">
+            </div>
+            <div class="coffee-col-desc">
+              <h3>Coffee Trees</h3>
+              <p>
+                We plant new coffee trees with seeds we buy from the  <a href="https://www.kalro.org/coffee/?q=homepage">Coffee Research Institute</a> in Ruiru.
+Trees on the Deman Estate have a crop cycle every 7-12 years depending on the variety.  We avoid uprooting trees at the 7-12 year mark. This has helped us maintain soil health over time. Instead of taking a lower-yielding tree out of the soil and planting a newer, younger tree in its spot, we select trees to cut down to a stump which stimulates the tree regrowing, renewing it entirely into a stronger and hardier unit. It helps the farm’s overall resilience by leaving the healthy root network intact over time.
+
+
+              </p>
+            </div>
+          </div>
+
+          <!-- col3 -->
+          <div class="coffee-col">
+            <div class="coffee-col-img">
+              <img src="/images/coffee-sunset.png" alt="Mutai with coffee">
+            </div>
+            <div class="coffee-col-desc">
+              <h3>Processing & Drying</h3>
+              <p>After the harvest, the coffee is sorted by grade. The beans are then divided into eight categories depending on their size.
+
+                We process our coffee naturally which improves the taste and uses less water compared to the washed method.
+                We ferment some of our coffees using the <b>carbonic maceration</b> process. (After harvesting, the cherries are placed in a tank and, without adding any water, they undergo an anaerobic fermentation for 2-3 days.) Next, they are laid out on drying beds (raised tables with meshes for table tops) and dried for a few weeks. We also use the <b>honey process</b>.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="wavy">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1a3416" fill-opacity="1" d="M0,160L60,165.3C120,171,240,181,360,208C480,235,600,277,720,256C840,235,960,149,1080,117.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+      </div>
+
+      <!-- Contact us -->
+      <div class="contact" id="contact">
+        <div class="contact-cover">
+          <div class="contact-pic">
+            <img src="/images/demanbreakfast.png" alt="Coffee breakfast table">
+          </div>
+          
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="socials">                            
+              <a href="https://www.facebook.com/realworthcapital/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/demancoffee/" target="_blank"><i class="bi bi-instagram"></i></a>              
+              <i class="bi bi-telephone-fill"></i>: +254 733951900
+            </div>
+
+            <form class="deman-form">
+              <p>Talk to us:</p>
+
+              <label for="names">Full Names:</label><br>
+              <input type="text" name="names" placeholder="John Doe"><br>
+  
+              <label for="email">Email:</label><br>
+              <input type="email" name="email" placeholder="jondoe@example.com"><br>
+  
+              <label for="names">Comment/inquiry:</label><br>
+              <textarea name="comment" placeholder="type..." cols="30" rows="10"></textarea><br>
+
+              <input type="submit" value="Submit" class="deman-submit">
+            </form>  
+        </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-cover">
+                  <!-- col1 -->
+        <div class="footer-col">
+          <h1>Testimonies</h1>
+          <ul>
+            <li><a href="https://jamesgourmetcoffee.com/" target="_blank">James Gourmet Coffee</a></li>
+            <li><a href="https://www.algrano.com/" target="_blank">Algrano</a></li>
+            <li><a href="https://www.driproasters.ch/" target="_blank">Drip Roasters</a></li>
+            <li><a href="https://www.northstarroast.com/" target="_blank">North Star Coffee Roasters</a></li>
+          </ul>
+        </div>
+
+        <!-- col2 -->
+        <div class="footer-col">
+          <h1>Internal links</h1>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#coffee">Coffee</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- col3 -->
+        <div class="footer-col">
+          <h1>Socil media links</h1>
+          <ul>
+            <li> <a href="https://www.facebook.com/realworthcapital/" target="_blank">Facebook</a></li>
+            <li> <a href="https://www.instagram.com/demancoffee/" target="_blank">Instagram</a></li>
+        </div>
+      </div>
+        </div>
+
     </div>
   </body>
 </html>
