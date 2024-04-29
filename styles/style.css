@@ -146,7 +146,7 @@
     flex: 4;
     width: 100%;
     border-radius: 20px;
-    background-image: url('/images/coffee-hunters.jpeg');
+    background-image: url('images/coffee-hunters.jpeg');
     background-repeat: repeat;
     background-size: cover;
 }
