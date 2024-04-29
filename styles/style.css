@@ -8,7 +8,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    z-index: 1;
+    /* z-index: 1; */
 }
 /* Home page */
 .home {
@@ -138,34 +138,36 @@
     height: auto;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    background-image: url('images/coffee-hunters.jpeg');
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 20px;
 }
 
-.about-col:first-child {
+.about-col-first {
     flex: 4;
     width: 100%;
-    height: auto;
+    border-radius: 20px;
+    background-image: url('/images/coffee-hunters.jpeg');
+    background-repeat: repeat;
+    background-size: cover;
 }
 
-.about-col:first-child h1{
+.about-col-first h1{
     color: red;
     font-size: 50px;
     letter-spacing: 3px;
     text-align: center;
     margin-top: 50%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
 }
 
-.about-col:first-child p {
+.about-col-first p {
     color: #fff;
+    margin-top: 80%;
     font-size: 25px;
     text-shadow: 1px 1px grey;
     text-align: center;
-    margin-top: 0;
     background-color: #000;
     opacity: 0.5;
 }
@@ -213,7 +215,8 @@
 .owner-desc img{
     flex:1;
     flex-direction: column;
-    border-radius: 60%;
+    object-fit: contain;
+    border-radius: 50%;
     width: 100%;
     cursor: pointer;
 }
