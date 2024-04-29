@@ -449,12 +449,16 @@
  /* Mobile Responsiveness */
 
  @media (max-width : 800px) {
-    .home {
-        background-image: url('images/pick-coffee.png');
+    .mobile-back {
+        background-image: url('../images/pick-coffee.png');
         width: 100%;
         height: 100vh;
         background-position: center;
         background-size: cover;
+        z-index: 999;
+    }
+    .back-video {
+        z-index: -999;
     }
     .nav {
         height: 60px;
@@ -474,6 +478,17 @@
 
     .deman-owner {
         flex-direction: column;
+    }
+
+    .about-col-first h1 {
+        top:100%;
+        left: 15%;
+    }
+
+    .owner-desc img:hover {
+        width: 240px;
+        height: 250px;
+        object-fit: cover;
     }
 
     .coffee-rows {
