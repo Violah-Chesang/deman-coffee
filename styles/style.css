@@ -204,9 +204,10 @@
 }
 
 .owner-desc {
-    flex: 5;
+    flex: 6;
     display: flex; 
-    flex-direction: column;   
+    flex-direction: column;  
+    align-items: stretch; 
     width: 100%;
     height: auto;
     margin: 0 20px;
@@ -215,8 +216,8 @@
 .owner-desc img{
     flex:1;
     flex-direction: column;
-    border-radius: 50%;
     width: 100%;
+    height: auto;
     cursor: pointer;
 }
 
@@ -234,7 +235,7 @@
 }
 
 .deman-owner-desc {
-    flex: 7;
+    flex: 6;
     padding: 20px;
     font-size: 18px;
 }
