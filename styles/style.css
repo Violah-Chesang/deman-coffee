@@ -215,7 +215,6 @@
 .owner-desc img{
     flex:1;
     flex-direction: column;
-    object-fit: contain;
     border-radius: 50%;
     width: 100%;
     cursor: pointer;
