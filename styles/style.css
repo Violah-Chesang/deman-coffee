@@ -562,4 +562,9 @@
         flex-direction: column;
     }
 
+    /* gallery */
+    .gallery-row {
+        flex-direction: column;
+    }
+
  }
