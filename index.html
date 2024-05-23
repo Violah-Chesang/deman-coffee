@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Deman Coffee is organic coffee produced in kenya" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,300;0,500;1,200&family=Roboto+Mono:wght@100&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
     <!-- bootstrap icon -->
@@ -12,13 +21,13 @@
     <title>Deman Coffee Estate</title>
   </head>
   <body>
-    <div class="container">
+    <div class="deman-container">
       <!-- nav -->
       <div class="nav">
         <!-- logo -->
         <div class="logo">
           <img src="images/logo.png" alt="logo" />
-          <h1 class="deman-name">DEMAN COFFEE</h1>
+          <h1 class="deman-name">DEMAN COFFEE ESTATE</h1>
         </div>
 
         <!-- navbar -->
@@ -37,10 +46,69 @@
 
       <!-- home -->
       <div class="home" id="home">
-        <div class="mobile-back">
+        <!-- <div class="mobile-back">
           <video autoplay loop muted plays-inline class="back-video" id="home">
             <source src="images/deman-cover.mp4" type="video/mp4" />
           </video>
+        </div> -->
+
+        <div class="slider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/harvesting.jpg" class="d-block w-100" alt="Coffee cherries picking">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Sustainable Regenerative And Organic Coffee Farming</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/drying-bed.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Coffee Dring On Raised Beds</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/farm.jpeg" class="d-block w-100" alt="Coffee farm">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>We embrace zero usage of herbicides and pesticides</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mutais-team.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Our Dedicated Team </h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/sorting3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Our Cherries Are Carefully Sorted</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mutai-drying.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Natural and Honey Processed Coffee</h1>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -59,8 +127,16 @@
                 Deman Coffee Estate is situated in Meru County- Nkubu sub-county ( On the eastern slopes of Mt. Kenya). The estate sits on a 10-acre land with an elevation of 1,600 meters above sea level.
               </p>
               <p>
-                We have 10,000 trees and our growing method is Regenerative Agriculture (Organic). Our grape varieties are Ruiru 11 and Batian.
-                We use Anaerobic fermentation/natural/Honey processes. Our coffee beans are screen number 16 and the harvesting period is December to June.
+                We have 10,000 trees and our growing method is Regenerative Agriculture (Organic). 
+                <ul>
+                  <li><b>Coffee varieties: </b>Our coffee varieties are Ruiru 11 and Batian.</li>
+                  <li><b>Processing: </b>We use different processing techniques such as anaerobic fermentation, natural, or honey processes.</li>
+                  <li><b>Harvesting seasons: </b>We have two harvesting seasons: 
+                  <ol>
+                    <li>March - June</li>
+                    <li>October - December</li>
+                  </ol></li>
+                </ul>
               </p>
             </div>
 
@@ -74,7 +150,7 @@
                 <p>
                   Deman Coffee Estate is owned by  Mutai Kinyua together with his wife Catherine Karimi. </p>
                   <p>His grandfather and father have grown coffee on this farm since the 1950s. </p> 
-                  <p>As a way of growing coffee in a sustainable way, Deman Coffee Estate embarked aggressively on adopting an agricultural system that sustains and restores natural resources and does not degrade them.                 
+                  <p>As a way of growing coffee in a sustainable way, Deman Coffee Estate embarked aggressively on adopting a Regenerative agricultural system that sustains the natural eco-system and does not degrade it.                
                 </p>
               </div>
             </div>                        
@@ -85,21 +161,23 @@
         <div class="about-coffee">
           <div class="about-coffee-row">
             <div class="coffee-col">
-              <h2>About Our Coffee</h2>
-              <p>
+              <h2>About Deman Coffee</h2>
+              <!-- <p>
                 We have strategically planted shade trees to mitigate climate change and bolster carbon storage, while also providing a natural habitat for biodiversity.
+              </p> -->
+              <p>
+                Our commitment to organic farming extends to the use of natural manures, devoid of chemical pesticides and fertilizers.
               </p>
               <p>
-                Our commitment to organic farming extends to the use of natural fertilizers, devoid of chemical pesticides and fertilizers.
+                Furthermore, we prioritize resilience by cultivating disease-resistant coffee varieties, ensuring the longevity and health of our crops.
               </p>
               <p>
-                Furthermore, we prioritize resilience by cultivating disease-resistant coffee varieties, ensuring the longevity and health of our crops
-              </p>
-              <p>
-                We use eco-friendly practices by eschewing the need for herbicides through manual and mechanical weeding.
+                We use eco-friendly practices by embracing zero usage of herbicides and adopting the use of manual and mechanical weeding.
               </p>
               <p>             
-                We transitioned to natural coffee processing methods that minimize water usage, and to ensure the highest quality and most exquisite flavors, we handpick only the deepest red, ripe cherries and carefully hand-sort to eliminate any imperfections.
+                We transitioned to natural coffee processing methods that use zero to very little water. 
+              </p>
+              <p>We handpick only the deep red ripe cherries and carefully hand-sort them to eliminate any imperfections. This ensures the final cup is of the highest quality and most exquisite flavors.
               </p>
             </div>
             <div class="coffee-col">
@@ -114,7 +192,7 @@
             </div>
 
             <div class="coffee-col">
-              <h2>Processing and cupping</h2>
+              <h2>Processing</h2>
               <p>
                 Our processing methods include the traditional Coffee <b>Naturals</b>, where cherries are meticulously dried on raised beds.
               </p>
@@ -124,13 +202,10 @@
               <p>
                 We employ the <b>Anaerobic</b> method as well. This is where we ferment cherries in sealed containers to develop complex flavors.
               </p>
-              <p>
-                Following these methods, our beans achieve an optimal moisture content of <b>10 to 12%</b>.
-              </p>
 
               <h3>Cupping</h3>
               <p>
-                In cupping, our coffee consistently receives an impressive overall score of <b>86+</b>, boasting delightful flavors reminiscent of mild blackcurrant, chocolate, cherry, and lemonade, with refreshing citrus notes. These meticulous processes result in a truly exceptional coffee experience, reflecting our dedication to quality and craftsmanship.
+                Our coffee consistently receives an impressive overall score of <b>86+</b>, boasting delightful flavors reminiscent of mild blackcurrant, chocolate, cherry, and lemonade, with refreshing citrus notes. These meticulous processes result in a truly exceptional coffee experience, reflecting our dedication to quality and craftsmanship.
               </p>
             </div>
           </div>
@@ -228,7 +303,7 @@
 
           <div class="gallery-col">
             <div class="gallery-img">
-              <img src="images/sorting.jpg" alt="sorting">
+              <img src="images/kids.jpg" alt="coffee drying">
             </div>
           </div>
 
@@ -301,7 +376,7 @@
       <div class="contact" id="contact">
         <div class="contact-cover">
           <div class="contact-pic">
-            <img src="images/demanbreakfast.png" alt="Coffee breakfast table">
+            <img src="images/cherries-picking.jpeg" alt="woman picking coffee cheries">
           </div>
           
           <div class="contact-form">
@@ -331,39 +406,31 @@
       </div>
 
       <!-- footer -->
-      <div class="footer">
-        <div class="footer-cover">
-          <!-- col1 -->
-          <div class="footer-col">
-            <h1>Testimonies</h1>
-            <ul>
-              <li><a href="https://jamesgourmetcoffee.com/product/kenya-deman-estate/" target="_blank">James Gourmet Coffee</a></li>
-              <li><a href="https://www.algrano.com/en/coffees/KE-1/harvests/KE-1-202107-d08f7d073e" target="_blank">Algrano</a></li>
-              <li><a href="https://www.driproasters.ch/en/blog/origin-trip-kenya" target="_blank">Drip Roasters</a></li>
-              <li><a href="https://www.northstarroast.com/blogs/learn/this-is-what-makes-our-kenya-coffee-so-special" target="_blank">North Star Coffee Roasters</a></li>
-            </ul>
-          </div>
+      <div class="partners">
+        <h1>Testimonials</h1>
+        <div class="partners-row">
+          <div class="partners-col">
+            <a href="https://jamesgourmetcoffee.com/product/kenya-deman-estate/" target="_blank"><img src="images/james-logo.jpg" alt="James Gourmet Coffee"></a>
 
-          <!-- col2 -->
-          <div class="footer-col">
-            <h1>Internal links</h1>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#coffee">Coffee</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
           </div>
-
-          <!-- col3 -->
-          <div class="footer-col">
-            <h1>Socil media links</h1>
-            <ul>
-              <li> <a href="https://www.facebook.com/realworthcapital/" target="_blank">Facebook</a></li>
-              <li> <a href="https://www.instagram.com/demancoffee/" target="_blank">Instagram</a></li>
+          <div class="partners-col">
+            <a href="https://www.algrano.com/en/coffees/KE-1/harvests/KE-1-202107-d08f7d073e" target="_blank"><img src="images/algrano.png" alt="Algrano"></a>
+          </div>
+          <div class="partners-col">
+            <a href="https://www.driproasters.ch/en/blog/origin-trip-kenya" target="_blank"><img src="images/drip-roasters.jpg" alt="Drip Roasters"></a>
+          </div>
+          <div class="partners-col">
+            <a href="https://www.northstarroast.com/blogs/learn/this-is-what-makes-our-kenya-coffee-so-special" target="_blank"><img src="images/north-star.png" alt="North Star Coffee Roasters"></a>
           </div>
         </div>
+        <div class="footer-text">
+          <p>All rights reserved | <b>Deman Coffee Estate © 2024</b></p>
+        </div>
       </div>
+
+
     </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
