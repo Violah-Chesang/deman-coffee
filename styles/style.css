@@ -33,6 +33,7 @@
 }
 
 .carousel-item img {
+    height: 100%;
  background-size: cover;
  object-fit: cover;
  object-position: bottom;
@@ -153,16 +154,6 @@
     background-size: cover;
 }
 
-.about-col-first h1{
-    color: red;
-    font-size: 50px;
-    letter-spacing: 3px;
-    text-align: center;
-    margin-top: 50%;
-    position: absolute;
-    top: 30%;
-    left: 15%;
-}
 
 .about-col-first p {
     color: #fff;
@@ -171,7 +162,7 @@
     text-shadow: 1px 1px grey;
     text-align: center;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .about-col:last-child {
@@ -570,8 +561,61 @@
   
 
  /* Mobile Responsiveness */
+ @media (max-width : 400px) {
+    .nav {
+        width: 100%;
+        height: 60px;
+    }   
+    .deman-name {
+        display: none;
+    } 
+    .nav ul li {
+        padding: 5px;
+    }
+    .nav ul li a {
+        font-weight: 400;
+        font-size: 16px;
+    }
 
- @media (max-width : 800px) {
+    .flag {
+        display: none;
+    }
+
+    /* about */
+    .about-row {
+        flex-direction: column;
+    }
+
+    .deman-owner {
+        flex-direction: column;
+    }
+    .about-coffee-row {
+        flex-direction: column;
+    }
+
+    /* gallery */
+    .gallery-row {
+        flex-direction: column;
+    }
+
+    /* contact */
+    .contact {
+        padding: 20px;
+    }
+    .contact-cover {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-pic img {
+        border-radius: 20px;
+    }
+    .partners-row {
+        flex-direction: column;
+    }
+ }
+
+ @media (min-width : 401px) and (max-width : 800px) {
     .mobile-back {
         background-image: url('../images/pick-coffee.png');
         width: 100%;
