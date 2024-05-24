@@ -35,7 +35,7 @@
 .carousel-item img {
  background-size: cover;
  object-fit: cover;
- background-position-y:bottom;
+ object-position: bottom;
 }
 
 .carousel-caption h1 {
