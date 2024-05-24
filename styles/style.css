@@ -563,6 +563,10 @@
     max-width: 100%; /* Ensures images fit within their columns */
     height: auto; /* Maintains aspect ratio */
   }
+
+  .partners-col h1 {
+    color: #fff;
+  }
   
 
  /* Mobile Responsiveness */
