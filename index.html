@@ -18,6 +18,8 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="js/main.js"></script>
     <title>Deman Coffee Estate</title>
   </head>
   <body>
@@ -37,6 +39,19 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- mobile nav -->
+        <div class="hamburger-cover">
+          <span class="close">&times;</span>
+          <div class="humburger-list">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>          
+        </div>
+        <div class="hamburger">&#9776;</div>
 
         <!-- flag -->
         <div class="flag">
@@ -46,55 +61,49 @@
 
       <!-- home -->
       <div class="home" id="home">
-        <!-- <div class="mobile-back">
-          <video autoplay loop muted plays-inline class="back-video" id="home">
-            <source src="images/deman-cover.mp4" type="video/mp4" />
-          </video>
-        </div> -->
-
         <div class="slider">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/harvesting.jpg" class="d-block w-100" alt="Coffee cherries picking">
+                <img src="images/mutais-team.jpeg" class="d-block w-100" alt="Deman team" id="harvesting2">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Sustainable Regenerative And Organic Coffee Farming</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/drying-bed.jpg" class="d-block w-100" alt="...">
+                <img src="images/drying-bed.jpg" class="d-block w-100" alt="..." id="harvesting2">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Coffee Dring On Raised Beds</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/farm.jpeg" class="d-block w-100" alt="Coffee farm">
+                <img src="images/coffee-cherries.jpg" class="d-block w-100" alt="Coffee farm">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>We embrace zero usage of herbicides and pesticides</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/mutais-team.jpeg" class="d-block w-100" alt="...">
+                <img src="images/bee-hives.jpg" class="d-block w-100" alt="Bee hives" id="harvesting2">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Our Dedicated Team </h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/women-sorting.png" class="d-block w-100" alt="cherries sorting">
+                <img src="images/women-sorting.png" class="d-block w-100" alt="coffee cherries sorting" id="harvesting2">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Our Cherries Are Carefully Sorted</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/mutai-drying.jpeg" class="d-block w-100" alt="...">
+                <img src="images/mutai-drying.jpeg" class="d-block w-100" alt="Mutai Drying coffee" id="harvesting2">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Natural and Honey Processed Coffee</h1>
                 </div>
@@ -369,6 +378,11 @@
           </div>
           
         </div>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="images/nursery.jpg">
+        </div>
       </div>
 
       <!-- Contact us -->
@@ -383,22 +397,22 @@
             <div class="socials">                            
               <a href="https://www.facebook.com/realworthcapital/" target="_blank"><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/demancoffee/" target="_blank"><i class="bi bi-instagram"></i></a>              
-              <i class="bi bi-telephone-fill"></i>: +254 733951900
+              <i class="bi bi-telephone-fill"></i>: +254 733951900 | +254 711453268
             </div>
 
             <form class="deman-form">
               <p>Talk to us:</p>
 
               <label for="names">Full Names:</label><br>
-              <input type="text" name="names" placeholder="John Doe"><br>
+              <input type="text" name="names" id="names" placeholder="John Doe"><br>
   
               <label for="email">Email:</label><br>
-              <input type="email" name="email" placeholder="jondoe@example.com"><br>
+              <input type="email" name="email" id="email" placeholder="jondoe@example.com"><br>
   
               <label for="names">Comment/inquiry:</label><br>
-              <textarea name="comment" placeholder="type..." cols="23" rows="10"></textarea><br>
+              <textarea name="comment" id="comment" placeholder="type..." cols="23" rows="10"></textarea><br>
 
-              <input type="submit" value="Submit" class="deman-submit">
+              <input type="submit" value="Submit" class="deman-submit" onclick="sendMail()">
             </form>  
         </div>
         </div>
@@ -406,23 +420,69 @@
 
       <!-- footer -->
       <div class="partners">
-        <h1>Testimonials</h1>
+        <h1 class="footer-title">Testimonials</h1>
+
         <div class="partners-row">
           <div class="partners-col">
-            <a href="https://jamesgourmetcoffee.com/product/kenya-deman-estate/" target="_blank"><img src="images/james-logo.jpg" alt="James Gourmet Coffee"></a>
-
+            <a href="https://www.northstarroast.com/blogs/learn/this-is-what-makes-our-kenya-coffee-so-special" target="_blank"><img src="images/north-star.png" alt="North Star Coffee Roasters"></a>
+            <h1 class="testimonial-title">North star</h1>
+            <div class="partners-testimonial">
+              <div class="testimonial-img">
+                <!-- <img src="partner" alt=""> -->
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="testimonial-desc">
+                <p>
+                  Consectetur esse sint exercitation tempor officia aliqua sit pariatur. In cupidatat quis Lorem qui culpa duis amet nisi consectetur duis. Velit deserunt ea aute laborum dolore aliquip eu dolor adipisicing. Lorem deserunt irure sunt exercitation ad exercitation dolore irure veniam.
+                </p>
+              </div>
+            </div>
           </div>
+
           <div class="partners-col">
             <a href="https://www.algrano.com/en/coffees/KE-1/harvests/KE-1-202107-d08f7d073e" target="_blank"><img src="images/algrano.png" alt="Algrano"></a>
-            <h1>Algrano</h1>
+            <h1 class="testimonial-title">Algrano</h1>
+            <div class="partners-testimonial">
+              <div class="testimonial-img">
+                <!-- <img src="partner" alt=""> -->
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="testimonial-desc">
+                <p>
+                  Consectetur esse sint exercitation tempor officia aliqua sit pariatur. In cupidatat quis Lorem qui culpa duis amet nisi consectetur duis. Velit deserunt ea aute laborum dolore aliquip eu dolor adipisicing. Lorem deserunt irure sunt exercitation ad exercitation dolore irure veniam.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="partners-col">
             <a href="https://www.driproasters.ch/en/blog/origin-trip-kenya" target="_blank"><img src="images/drip-roasters.jpg" alt="Drip Roasters"></a>
+            <div class="partners-testimonial">
+              <div class="testimonial-img">
+                <!-- <img src="partner" alt=""> -->
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="testimonial-desc">
+                <p>
+                  Consectetur esse sint exercitation tempor officia aliqua sit pariatur. In cupidatat quis Lorem qui culpa duis amet nisi consectetur duis. Velit deserunt ea aute laborum dolore aliquip eu dolor adipisicing. Lorem deserunt irure sunt exercitation ad exercitation dolore irure veniam.
+                </p>
+              </div>
+            </div>
           </div>
           <div class="partners-col">
-            <a href="https://www.northstarroast.com/blogs/learn/this-is-what-makes-our-kenya-coffee-so-special" target="_blank"><img src="images/north-star.png" alt="North Star Coffee Roasters"></a>
-            <h1>North star</h1>
+            <a href="https://jamesgourmetcoffee.com/product/kenya-deman-estate/" target="_blank"><img src="images/james-logo.jpg" alt="James Gourmet Coffee"></a>
+            <div class="partners-testimonial">
+              <div class="testimonial-img">
+                <!-- <img src="partner" alt=""> -->
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="testimonial-desc">
+                <p>
+                  Consectetur esse sint exercitation tempor officia aliqua sit pariatur. In cupidatat quis Lorem qui culpa duis amet nisi consectetur duis. Velit deserunt ea aute laborum dolore aliquip eu dolor adipisicing. Lorem deserunt irure sunt exercitation ad exercitation dolore irure veniam.
+                </p>
+              </div>
+            </div>
           </div>
+
         </div>
         <div class="footer-text">
           <p>All rights reserved | <b>Deman Coffee Estate © 2024</b></p>
@@ -433,5 +493,39 @@
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("ifOYZCN82lI8EqBsQ");
+      })();
+    </script>
+    <script>
+      document.querySelectorAll('.gallery-col img').forEach(image => {
+        image.onclick = () => {
+          document.querySelector('.popup-image').style.display = 'block';
+          document.querySelector('.popup-image img').src = image.getAttribute('src')
+        }
+      });
+
+      document.querySelector('.popup-image span').onclick = () => {
+        document.querySelector('.popup-image').style.display = 'none';
+      }
+
+      // mobile nav
+      document.querySelector('.hamburger').onclick = () => {
+        document.querySelector('.hamburger-cover').style.display = 'block';
+        document.querySelector('.hamburger').style.display = 'none';
+      }
+
+      // close nav
+      document.querySelector('.close').onclick = () => {
+        document.querySelector('.hamburger-cover').style.display = 'none';
+        document.querySelector('.hamburger').style.display = 'block';
+
+
+      }
+    </script>
   </body>
 </html>
